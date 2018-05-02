@@ -1,5 +1,5 @@
 1. Get Parameters 
-![image](https://note.youdao.com/yws/api/personal/file/B2412C6ACA9F4C4C88215FBAF7674E4E?method=download&shareKey=7c9cd171be81d1ed5b6e4e3b517729cd)
+![image](https://raw.githubusercontent.com/bombehappy/APIExample/master/api.png)
 
 2. Code Example
 ```
