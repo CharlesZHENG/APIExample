@@ -7,15 +7,16 @@ using System.Net.Security;
 using System.Security.Cryptography;
 using System.Text;
 using System.Threading.Tasks;
+using Newtonsoft.Json;
 
 namespace Example
 {
     class Program
     {
-        private static string _userId = "";
-        private static string _publicKey = "";
-        private static string _privateKey = "";
-        private static string currencyId = "";
+        private static string _userId = "5a0a946089b8fa1b4060c295";
+        private static string _publicKey = "5acdc05032ef2c2bc463e711";
+        private static string _privateKey = "5acdc05032ef2c2bc463e712";
+        private static string currencyId = "ae";
         private static string _baseUrl = "https://api.xbrick.io/api/v1";
         static void Main(string[] args)
         {
@@ -25,6 +26,7 @@ namespace Example
             String sign = EncryptHMACSHA256(_privateKey, signStr);
             string requestUrl = apiUrl + $"?currencyId={currencyId}";
             var data = DoRequestAsync<DemoObject>(requestUrl, sign, timestamp).Result;//Get Dada
+            Console.WriteLine(JsonConvert.SerializeObject(data));
             Console.Read();
         }
 
