@@ -15,10 +15,10 @@ using System.Threading.Tasks;
 namespace Example
 {
     class Program
-    {
-        private static string _userId = "";
-        private static string _publicKey = "";
-        private static string _privateKey = "";
+    {        
+        private static string _userId = "5a0a946089b8fa1b4060c295";
+        private static string _publicKey = "5acdc05032ef2c2bc463e711";
+        private static string _privateKey = "5acdc05032ef2c2bc463e712";
         private static string currencyId = "ae";
         private static string _baseUrl = "https://api.xbrick.io/api/v1";
         static void Main(string[] args)
